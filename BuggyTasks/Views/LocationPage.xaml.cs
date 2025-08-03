@@ -13,15 +13,15 @@ public partial class LocationPage : ContentPage
     protected override void OnAppearing()
     {
         base.OnAppearing();
-        GetLocation(); 
+        // GetLocation(); 
     }
 
-    Task GetLocation()
-    {
-        var location =  Geolocation.GetLastKnownLocationAsync(); 
-        if (location != null)
-        {
-            Console.WriteLine($"Lat: {location.Latitude}, Long: {location.Longitude}");
-        }
-    }
+    // Task GetLocation()
+    // {
+    //     var location =  Geolocation.GetLastKnownLocationAsync(); 
+    //     // if (location != null)
+    //     // {
+    //     //     Console.WriteLine($"Lat: {location.Latitude}, Long: {location.Longitude}");
+    //     // }
+    // }
 }
