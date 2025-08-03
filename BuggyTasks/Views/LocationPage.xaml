@@ -7,6 +7,6 @@
         <vm:NewTaskViewModel />
     </ContentPage.BindingContext>
     <VerticalStackLayout Padding="16">
-        <Label x:Name="LocationLabel" Text="Location: " />
+        <Label x:Name="LocationLabel" />
     </VerticalStackLayout>
 </ContentPage>

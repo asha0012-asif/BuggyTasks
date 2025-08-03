@@ -4,9 +4,10 @@
              x:Class="BuggyTasks.Views.DeviceInfoPage"
              Title="Device Info">
     <ContentPage.BindingContext>
-        <vm:NewTaskViewModel />
+        <vm:DeviceInfoViewModel />
     </ContentPage.BindingContext>
-    <VerticalStackLayout>
-        <Label Text="..." FontSize="24" HorizontalOptions="Center"/>
+    <VerticalStackLayout Padding="16">
+        <Label Text="{Binding Model, StringFormat='Model: {0}'}" />
+        <Label Text="{Binding Platform, StringFormat='Platform: {0}'}" />
     </VerticalStackLayout>
 </ContentPage>
